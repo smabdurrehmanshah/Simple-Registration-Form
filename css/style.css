@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a3b5c2;
+
+}
+
+.container {
+  height: 500px;
+  width: 1200px;
+  display: flex;
+}
+
+.left {
+  height: 100%;
+  width: 40%;
+  background-color: #1865a1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left h1 {
+  padding-top: 25px;
+  color: rgb(230, 229, 229);
+}
+
+.left #form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+#form input {
+  width: 420px;
+  height: 40px;
+  margin-bottom: 25px;
+  outline: none;
+  border: none;
+  background-color: #1865a1;
+  border-bottom: 1px solid rgb(175, 175, 175);
+  color: white;
+  font-size: 16px;
+}
+
+#form input:-webkit-autofill {
+  background-color: #1865a1 !important;
+  -webkit-box-shadow: 0 0 0 1000px #1865a1 inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+#form input::placeholder {
+  color: rgb(184, 183, 183);
+  font-size: 16px;
+}
+
+#form input:focus {
+  border-bottom: 1px solid black;
+}
+
+#form input[type="submit"] {
+  width: 120px;
+  color: #1865a1;
+  border: none;
+  background-color: #d1d9df;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btn {
+  padding: 12px 15px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background-color: #1865a1;
+  color: white;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: #80abcc;
+  color: rgb(0, 0, 0);
+}
+
+.right {
+  height: 100%;
+  width: 60%;
+  background-color: #d1d9df;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.right > div {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.right h1 {
+  color: #1865a1;
+  padding-left: 100px;
+}
+
+#table {
+  width: 90%;
+  border-collapse: collapse;
+}
+
+#table th,td {
+  padding: 8px 10px;
+  border: 1px solid #1865a1;
+}
+
+#table thead {
+  background-color: #7eafd8;
+  color: rgb(26, 26, 189);
+}
+
+#table tbody {
+  color: #035492;
+  font-weight: 600;
+}
+
+#table tbody tr:nth-child(even) {
+  background-color: #acc3d4;
+}
